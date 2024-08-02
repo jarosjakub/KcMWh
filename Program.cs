@@ -24,11 +24,6 @@ namespace KcMWh
                     outputFile.WriteLine(j + "\t" + line[i]);
                     outputFile.WriteLine(j + "\t" + line[i]);
                     outputFile.WriteLine(j + "\t" + line[i]);
-
-                    //outputFile.WriteLine(i + "\t" + line[i]);
-                    //outputFile.WriteLine(i + "\t" + line[i]);
-                    //outputFile.WriteLine(i + "\t" + line[i]);
-                    //outputFile.WriteLine(i + "\t" + line[i]);
                 }
                 if (j < 24)
                 {
