@@ -1,4 +1,6 @@
-﻿namespace KcMWh
+﻿using System.Globalization;
+
+namespace KcMWh
 {
     internal class Program
     {
@@ -11,20 +13,30 @@
             string[] line = content.Split("\r\n");
             var lenght = line.Length;
             Console.WriteLine(lenght);
+            var j = 0;
 
-            for (int i = 0;i < lenght; i++) 
+            for (int i = 0; i < lenght; i++)
             {
+                
                 using (StreamWriter outputFile = new StreamWriter(OutputPath, true))
                 {
-                    outputFile.WriteLine(line[i]);
-                    outputFile.WriteLine(line[i]);
-                    outputFile.WriteLine(line[i]);
-                    outputFile.WriteLine(line[i]);
+                    outputFile.WriteLine(j + "\t" + line[i]);
+                    outputFile.WriteLine(j + "\t" + line[i]);
+                    outputFile.WriteLine(j + "\t" + line[i]);
+                    outputFile.WriteLine(j + "\t" + line[i]);
 
                     //outputFile.WriteLine(i + "\t" + line[i]);
                     //outputFile.WriteLine(i + "\t" + line[i]);
                     //outputFile.WriteLine(i + "\t" + line[i]);
                     //outputFile.WriteLine(i + "\t" + line[i]);
+                }
+                if (j < 24)
+                {
+                    j++;
+                }
+                else
+                {
+                    j = j - 23;
                 }
             }
         }
