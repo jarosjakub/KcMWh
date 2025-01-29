@@ -81,7 +81,7 @@ namespace KcMWh
 			{
                 Console.WriteLine("CHYBA:" + e.Message);
 			}
-            Console.WriteLine("\n" + "Konec, stiskněte libovolnou klávesu pro ukončení");
+            Console.WriteLine("\n" + "Konec, stiskněte Enter pro ukončení");
             Console.ReadLine();
         }
     }

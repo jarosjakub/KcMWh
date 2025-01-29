@@ -1,10 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>electricity_mast_pole_power_pylon_transmission_utility_icon_123332.ico</ApplicationIcon>
+    <AssemblyName>4xCena</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="electricity_mast_pole_power_pylon_transmission_utility_icon_123332.ico" />
+  </ItemGroup>
 
 </Project>
